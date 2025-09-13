@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Pendaftaran Seminar</title>
+</head>
+<body>
+  <form>
+    <h2>Pendaftaran Seminar Online Web Development</h2>
+    <label for="nama">Nama Lengkap</label>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+
+    <label for="telepon">Nomor Telepon</label>
+    <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" required>
+
+    <label for="sesi">Pilih Sesi Seminar</label>
+    <select id="sesi" name="sesi" required>
+      <option value="">-- Pilih Sesi --</option>
+      <option value="pagi">Sesi 1: Basic Web Development (08:00 - 10.00)</option>
+      <option value="siang">Sesi 2: Intermediate Front End Development (12.00 - 14.00)</option>
+      <option value="malam">Sesi 3: Intermediate Back End Development (14.30 - 16.30)</option>
+    </select>
+
+    <label for="komentar">Komentar atau Pertanyaan</label>
+    <textarea id="komentar" name="komentar" rows="3" placeholder="Tambahkan komentar atau pertanyaan yang ingin ditanyakan pada saat sesi tanya jawab..."></textarea>
+
+    <button type="submit">Daftar</button>
+  </form>
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    form {
+      background-color: #1e1e2f;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+    }
+    h2 {
+      text-align: center;
+      color: #4da6ff;
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      background-color: #2a2a3d;
+      color: #e0e0e0;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #aaabbf;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4da6ff;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3399ff;
+    }
+  </style>
+</body>
+</html>

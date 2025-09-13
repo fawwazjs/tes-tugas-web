@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeri Gambar</title>
+</head>
+<body>
+  <h1>Galeri Gambar</h1>
+  <div class="gallery">
+    <figure>
+      <img src="https://picsum.photos/id/16/300/200" alt="Gambar 1">
+      <figcaption>Menikmati siang bolong di tepi danau yang indah dengan bebatuan</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/id/22/300/200" alt="Gambar 2">
+      <figcaption>Orang dengan setelan jas lengkap sedang jalan kaki ke tempat kerja</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/id/27/300/200" alt="Gambar 3">
+      <figcaption>Sore santai enaknya sambil mancing di tepi laut</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/id/44/300/200" alt="Gambar 4">
+      <figcaption>Mendung adalah suasana syahdu yang dirindukan banyak orang</figcaption>
+    </figure>
+  </div>
+</body>
+ <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #4da6ff;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    figure {
+      background-color: #1e1e2f;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    img {
+      width: 100%;
+      border-radius: 6px;
+    }
+    figcaption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #ccc;
+    }
+  </style>
+</html>
